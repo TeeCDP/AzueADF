@@ -1,0 +1,24 @@
+{
+	"name": "ecdc_sched_trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Pl_cases",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 10,
+				"startTime": "2022-02-05T15:08:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}

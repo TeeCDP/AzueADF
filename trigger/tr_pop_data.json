@@ -1,0 +1,24 @@
+{
+	"name": "tr_pop_data",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "ingest_population",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/population/blobs/pop",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/2738b2ff-6496-4399-b819-d9773141bed3/resourceGroups/covid-reporting-rg/providers/Microsoft.Storage/storageAccounts/covidreportingsatunde",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"name": "bricks_pop",
+	"properties": {
+		"activities": [
+			{
+				"name": "bricks pop trans",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.2:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/covid/transform/transform_population_data"
+				},
+				"linkedServiceName": {
+					"referenceName": "db_covid_cluster",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2022-02-08T22:08:01Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

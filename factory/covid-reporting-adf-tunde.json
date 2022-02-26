@@ -1,0 +1,9 @@
+{
+	"name": "covid-reporting-adf-tunde",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e1270fb3-dd2f-4231-b166-1e522aeff271",
+		"tenantId": "e54808b0-cc6c-4c8d-aa45-6e6a4968502b"
+	}
+}
